@@ -45,7 +45,7 @@ My research mainly focuses on **streaming video reasoning, with an emphasis on t
 [Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in Multimodal Large Language Models](https://arxiv.org/pdf/2603.11896) \\
 **Lu Wang**, Zhuoran Jin, Yupu Hao, Yubo Chen, Kang Liu, Yulong Ao, Jun Zhao
 
-[![Paper](https://img.shields.io/badge/Paper-ECCV_2026-b31b1b.svg?logo=arxiv)](https://arxiv.org/pdf/2603.11896) [![Code](https://img.shields.io/badge/GitHub-Code-black.svg?logo=github)](https://github.com/wl666hhh/Think_While_Watching/)
+[![Paper](https://img.shields.io/badge/Paper-ECCV_2026-b31b1b.svg?logo=arxiv)](https://arxiv.org/pdf/2603.11896) [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Paper-blue.svg)](https://huggingface.co/papers/2603.11896) [![Code](https://img.shields.io/badge/GitHub-Code-black.svg?logo=github)](https://github.com/wl666hhh/Think_While_Watching/)
 
 </div>
 </div>

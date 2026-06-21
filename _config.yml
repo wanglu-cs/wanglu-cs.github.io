@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Zhuoran Jin"
-description              : "Final-year Ph.D. student at Institute of Automation, Chinese Academy of Sciences"
-repository               : "jinzhuoran/jinzhuoran.github.io"
+title                    : "Lu Wang"
+description              : "Zero-year Ph.D. student at Institute of Automation, Chinese Academy of Sciences"
+repository               : "wanglu-cs/wanglu-cs.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -21,14 +21,14 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Zhuoran Jin"
+  name             : "Lu Wang"
   avatar           : "images/me.jpg"
   bio              : 
   location         : "Beijing, China"
   employer         : 
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=Am8WsCkAAAAJ&hl=en"
-  email            : "zhuoran.jin@nlpr.ia.ac.cn"
+  googlescholar    : "https://scholar.google.com/citations?user=8BJGY4wAAAAJ&hl=en"
+  email            : "wanglu2026@ia.ac.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "jinzhuoran"
+  github           : "wanglu-cs"
   google_plus      :
   keybase          :
   instagram        :

@@ -1,36 +1,33 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang }}">
+---
+layout: compress
+---
 
-  <!-- Head -->
+<!doctype html>
+<html lang="en" class="no-js">
   <head>
-  {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
-  {%- endif -%}
-  {% include head.html %}
+    {% include head.html %}
+    {% include head/custom.html %}
   </head>
 
-  <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body>
 
-    <!-- Header -->
-    {%- include header.html %}
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
 
-    <!-- Content -->
-    <div class="container mt-5">
-      {{ content }}
+    <div id="main" role="main">
+      {% include sidebar.html %}
+    
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            {{ content }}
+          </section>
+        </div>
+      </article>
     </div>
 
-    <!-- Footer -->
-    {%- include footer.html %}
+    {% include scripts.html %}
 
-    <!-- JavaScripts -->
-    {% include scripts/jquery.html %}
-    {% include scripts/bootstrap.html %}
-    {% include scripts/masonry.html %}
-    {% include scripts/misc.html %}
-    {% include scripts/badges.html %}
-    {% include scripts/mathjax.html %}
-    {% include scripts/analytics.html %}
-    {% include scripts/progressBar.html %}
   </body>
 </html>

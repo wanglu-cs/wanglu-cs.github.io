@@ -60,3 +60,24 @@ My research mainly focuses on **streaming video reasoning, with an emphasis on t
 * *2026.09 - Present*, Ph.D., Institute of Automation, Chinese Academy of Sciences, supervised by [Prof. Jun Zhao](https://zhaojun-nlpr.github.io/).
 
 * *2022.09 - 2026.06*, B.E., School of Software Engineering, [Dalian University of Technology](https://www.dlut.edu.cn/).
+
+<section class="homepage-like" aria-label="页面互动">
+  <button id="homepage-like-button" class="homepage-like__button" type="button" aria-pressed="false">
+    <span class="homepage-like__icon" aria-hidden="true">♥</span>
+    <span class="homepage-like__label">喜欢这个主页</span>
+    <span id="homepage-like-count" class="homepage-like__count" aria-live="polite">0</span>
+  </button>
+  <span id="homepage-like-status" class="homepage-like__status" role="status"></span>
+</section>
+
+<section class="homepage-contact" aria-labelledby="wechat-title">
+  <div class="homepage-contact__copy">
+    <span class="homepage-contact__eyebrow">Let's connect</span>
+    <h2 id="wechat-title">添加我的微信</h2>
+    <p>扫码添加好友，欢迎交流研究、合作与想法。</p>
+  </div>
+  <div class="homepage-contact__qr">
+    <img src="images/wechat-qr.png" alt="微信二维码，扫码添加我为好友" loading="lazy">
+    <span>微信二维码</span>
+  </div>
+</section>

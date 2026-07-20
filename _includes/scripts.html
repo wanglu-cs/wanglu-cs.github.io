@@ -2,3 +2,45 @@
 
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
+
+<script>
+  (function () {
+    var button = document.getElementById('homepage-like-button');
+    var count = document.getElementById('homepage-like-count');
+    var status = document.getElementById('homepage-like-status');
+    if (!button || !count) return;
+    var likedKey = 'homepage-liked-v2';
+    var cachedCountKey = 'homepage-like-count-v2';
+    var endpoint = 'https://api.counterapi.dev/v1/wanglu-cs-github-io/homepage-likes/up';
+    var likes = parseInt(localStorage.getItem(cachedCountKey) || '0', 10);
+    var liked = localStorage.getItem(likedKey) === 'true';
+    if (!Number.isFinite(likes) || likes < 0) likes = 0;
+    function render() {
+      count.textContent = likes;
+      button.setAttribute('aria-pressed', liked ? 'true' : 'false');
+      if (status) status.textContent = liked ? '感谢你的喜欢！' : '';
+    }
+    button.addEventListener('click', function () {
+      if (liked) return;
+      button.disabled = true;
+      if (status) status.textContent = '正在记录…';
+      fetch(endpoint, { method: 'GET', mode: 'cors' })
+        .then(function (response) {
+          if (!response.ok) throw new Error('like request failed');
+          return response.json();
+        })
+        .then(function (data) {
+          likes = Number(data.count) || likes + 1;
+          liked = true;
+          localStorage.setItem(cachedCountKey, likes);
+          localStorage.setItem(likedKey, 'true');
+          render();
+        })
+        .catch(function () {
+          button.disabled = false;
+          if (status) status.textContent = '暂时无法记录，请稍后再试。';
+        });
+    });
+    render();
+  }());
+</script>

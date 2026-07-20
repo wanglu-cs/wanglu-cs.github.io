@@ -10,6 +10,70 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="assets/css/academicons.css"/>
 
+<style>
+  .homepage-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 3.5rem 0 2rem;
+    padding: 2rem;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background: #fafafa;
+  }
+  .homepage-contact__eyebrow {
+    display: block;
+    margin-bottom: .45rem;
+    color: #777;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+  .homepage-contact h2 { margin: 0 0 .4rem; }
+  .homepage-contact p { margin: 0; color: #666; }
+  .homepage-contact__qr { flex: 0 0 148px; text-align: center; }
+  .homepage-contact__qr img {
+    display: block;
+    width: 148px;
+    height: 148px;
+    object-fit: contain;
+    margin: 0 auto .45rem;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  .homepage-contact__qr span { color: #777; font-size: .82rem; }
+  .homepage-like { margin: 2rem 0 1rem; text-align: center; }
+  .homepage-like__button {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    min-height: 42px;
+    padding: .55rem 1rem;
+    color: #555;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+    transition: color .2s ease, border-color .2s ease, background .2s ease;
+  }
+  .homepage-like__button:hover, .homepage-like__button[aria-pressed="true"] {
+    color: #d9534f;
+    border-color: #d9534f;
+    background: #fff8f7;
+  }
+  .homepage-like__icon { font-size: 1.25rem; line-height: 1; }
+  .homepage-like__count { min-width: 1.2em; font-variant-numeric: tabular-nums; }
+  .homepage-like__status { display: block; min-height: 1.3em; margin-top: .45rem; color: #777; font-size: .82rem; }
+  @media (max-width: 600px) {
+    .homepage-contact { align-items: flex-start; padding: 1.25rem; gap: 1rem; }
+    .homepage-contact__qr { flex-basis: 112px; }
+    .homepage-contact__qr img { width: 112px; height: 112px; }
+  }
+</style>
+
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({

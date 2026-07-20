@@ -18,12 +18,12 @@
     function render() {
       count.textContent = likes;
       button.setAttribute('aria-pressed', liked ? 'true' : 'false');
-      if (status) status.textContent = liked ? '感谢你的喜欢！' : '';
+      if (status) status.textContent = liked ? 'Thank you for your support!' : '';
     }
     button.addEventListener('click', function () {
       if (liked) return;
       button.disabled = true;
-      if (status) status.textContent = '正在记录…';
+      if (status) status.textContent = 'Recording your like...';
       fetch(endpoint, { method: 'GET', mode: 'cors' })
         .then(function (response) {
           if (!response.ok) throw new Error('like request failed');
@@ -38,7 +38,7 @@
         })
         .catch(function () {
           button.disabled = false;
-          if (status) status.textContent = '暂时无法记录，请稍后再试。';
+          if (status) status.textContent = 'Unable to record your like. Please try again later.';
         });
     });
     render();

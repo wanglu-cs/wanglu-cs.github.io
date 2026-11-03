@@ -32,12 +32,24 @@ My research mainly focuses on **streaming video reasoning, with an emphasis on t
 
 # 🔥 News
 
+* *2026-10*: 📰 We released [AskStream](https://arxiv.org/abs/2610.38678), a multi-turn benchmark for proactive information seeking under uncertainty in streaming video understanding.
 * *2026-06*: 🎉 One paper is accepted by ECCV 2026.
 * *2026-06*: 📰 We released a survey on [Agentic Environment Engineering](https://arxiv.org/pdf/2606.12191), which systematically summarizes recent progress in Environment Modeling, Synthesis, Evaluation, and Application, with nearly 600 papers reviewed.
 
 # 📝 Publications
 
 ## Selected Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='https://raw.githubusercontent.com/wanglu-cs/AskStream/main/assets/overview.png' alt="AskStream overview" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[AskStream: When and What to Ask Proactively under Uncertainty in Streaming Video Understanding](https://arxiv.org/abs/2610.38678) \\
+**Lu Wang**, Zhuoran Jin, Longxiang Wang, Junhong Chen, Yupu Hao, Yao Xu, Daojian Zeng, Yubo Chen, Kang Liu, Guang Liu, Jun Zhao
+
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2610.38678) [![Project](https://img.shields.io/badge/Project-Page-blue.svg)](https://www.askstream.top) [![Code](https://img.shields.io/badge/GitHub-Code-black.svg?logo=github)](https://github.com/wanglu-cs/AskStream) [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow.svg)](https://huggingface.co/datasets/wanglucs/AskStream)
+
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><img src='images/publication/think-while-watching.png' alt="Think While Watching" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -52,6 +64,9 @@ My research mainly focuses on **streaming video reasoning, with an emphasis on t
 
 ## 2026
 
+* [AskStream: When and What to Ask Proactively under Uncertainty in Streaming Video Understanding](https://arxiv.org/abs/2610.38678). **arXiv 2026**.<br>
+  **Lu Wang**, Zhuoran Jin, Longxiang Wang, Junhong Chen, Yupu Hao, Yao Xu, Daojian Zeng, Yubo Chen, Kang Liu, Guang Liu, Jun Zhao
+
 * [Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in Multimodal Large Language Models](https://arxiv.org/pdf/2603.11896). **ECCV 2026**.<br>
   **Lu Wang**, Zhuoran Jin, Yupu Hao, Yubo Chen, Kang Liu, Yulong Ao, Jun Zhao
 
@@ -60,15 +75,6 @@ My research mainly focuses on **streaming video reasoning, with an emphasis on t
 * *2026.09 - Present*, Ph.D., Institute of Automation, Chinese Academy of Sciences, supervised by [Prof. Jun Zhao](https://zhaojun-nlpr.github.io/).
 
 * *2022.09 - 2026.06*, B.E., School of Software Engineering, [Dalian University of Technology](https://www.dlut.edu.cn/).
-
-<section class="homepage-like" aria-label="Page feedback">
-  <button id="homepage-like-button" class="homepage-like__button" type="button" aria-pressed="false">
-    <span class="homepage-like__icon" aria-hidden="true">♥</span>
-    <span class="homepage-like__label">Like this homepage</span>
-    <span id="homepage-like-count" class="homepage-like__count" aria-live="polite">0</span>
-  </button>
-  <span id="homepage-like-status" class="homepage-like__status" role="status"></span>
-</section>
 
 <section class="homepage-contact" aria-labelledby="wechat-title">
   <div class="homepage-contact__copy">
